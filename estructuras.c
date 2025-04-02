@@ -6,11 +6,11 @@
 Usuario *crearUsuario() {
     Usuario *nuevoUsuario;
     nuevoUsuario = (Usuario *)malloc(sizeof(Usuario));
-    nuevoUsuario->usuario = (char *)calloc(MAX_TEXTO, sizeof(char));
+    nuevoUsuario->usuario = (char *)calloc(MAX, sizeof(char));
     printf("\n=====================================");
     printf("\nNombre de usuario: ");
     getchar();
-    fgets(nuevoUsuario->usuario, MAX_TEXTO, stdin);
+    fgets(nuevoUsuario->usuario, MAX, stdin);
     printf("\nPin: ");
     scanf("%d", &nuevoUsuario->pin);
     return nuevoUsuario;

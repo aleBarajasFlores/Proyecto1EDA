@@ -6,7 +6,7 @@
 #include "estructuras.c"
 
 int main() {
-    int dato,opcion, totalUsuarios=0;
+    int opcion, totalUsuarios=0;
     Usuario usuarios[MAX_USERS];
     Usuario *u;
 
