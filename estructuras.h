@@ -10,7 +10,7 @@ typedef struct {
     char descripcion[MAX];
 } Transaccion;
 
-typedef struct { 
+typedef struct {
     Transaccion transacciones[MAX];
     int tope;
 } PilaTransacciones;
@@ -36,5 +36,10 @@ typedef struct {
 Usuario *crearUsuario();
 void listarUsuarios(Usuario *u, int total);
 int validarUsuario(Usuario *u, Usuario ingreso, int total);
+
+void listarTrans();
+void agregarTrans();
+void listarMetas();
+void agregarMeta();
 
 #endif

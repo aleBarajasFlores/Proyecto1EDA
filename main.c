@@ -24,6 +24,8 @@ int main() {
                 u = crearUsuario();
                 if(validarUsuario(usuarios, *u, totalUsuarios)) {
                     printf("\nBienvenido :D");
+                    printf("\nIngrese el numero de la opcion deseada: ");
+                    opcion = desplegarMenu("\n\n1)Listar Transacciones\n2)Agregar transaccion\n3)Listar Metas\n4)Agregar Meta\n5)Cerrar sesion\nOpcion: ",5);
                 } else {
                     printf("\nEl usuario no esta registrado :(");
                 }
